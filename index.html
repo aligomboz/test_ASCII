@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>Check ASCII code</p>
+
+        <p>
+            Enter any character:
+            <input type="text" id="id1" maxlength="1" name="text1"> </br>
+        </p>
+
+        <button onclick="myFunction()">Get ASCII code</button>
+
+        <p id="demo" style="color:red;"></p>
+    </div>
+    <script>
+        // const stringToSum = str => [...str].reduce((a, x) => a += x.codePointAt(0), 0);
+        // console.log(stringToSum("A"));
+        // console.log(stringToSum("Roko"));
+
+        function myFunction() {
+            var str = document.getElementById("id1");
+            if (str.value == "") {
+                str.focus();
+                return;
+            }
+            var a = "ASCII Code is == >  ";
+            var s = str.value;
+            // console.log(encode(s));
+            document.getElementById("demo").innerHTML = a + s.charCodeAt([]);
+        }
+
+        // var str = new TextEncoder().encode("aaa");
+        // console.log(str);
+    </script>
+</body>
+
+</html>
